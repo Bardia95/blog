@@ -23,8 +23,8 @@
     <%= form.rich_text_area :text, placeholder: "Body"%>
   </p>
 
-  <p class="publish-button">
-    <%= form.submit 'Publish', data: { confirm: 'You sure you ready to publish?' } %>
+  <p id="publish-button-container">
+    <%= form.submit '✔️', data: { confirm: 'You sure you ready to publish?' }, id:"publish-button" %>
   </p>
 
 <% end %>

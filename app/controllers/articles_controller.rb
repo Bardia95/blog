@@ -31,6 +31,8 @@ class ArticlesController < ApplicationController
  
     if !@article.update(article_params) 
       render 'edit'
+    else
+      redirect_to article_path(@article)
     end
   end
  
