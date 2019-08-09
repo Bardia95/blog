@@ -1,6 +1,6 @@
 <h1 style="color:#DBAD6A">The Periculum</h1>
-<% @articles.each do |article| %>
-  <p>
-    <%= link_to article.title, article_path(article), class: "article_link" %> 
-  </p>
-<% end %>
+<div class="article-link-container">
+  <% @articles.each do |article| %>
+    <%= link_to article.title, article_path(article), class: "article-link" %> 
+  <% end %>
+</div>

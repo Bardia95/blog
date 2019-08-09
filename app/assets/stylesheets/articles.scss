@@ -9,8 +9,12 @@ a {
   }
 }
 
+// Index links container
+.article-link-container {
+  margin-left: 20px;
+}
 // Index links
-.article_link {
+.article-link {
   text-decoration: none;
   border-bottom: none;
   line-height: 1.2rem;
@@ -37,11 +41,14 @@ a {
   padding-right: 50px;
   margin-bottom: 20px;
   margin-top: 20px;
+  h1 {
+    color:#DBAD6A;
+  }
 }
 
 // Title 
 #article_title {
-  min-width: 400px;
+  width: 90%;
   min-height: 50px;
   display: block;
   font-size: 2em;
