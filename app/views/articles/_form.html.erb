@@ -1,0 +1,30 @@
+
+<%= form_with model: @article, local: true do |form| %>
+
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.text_field :title, placeholder: "Title"  %>
+  </p>
+
+  <p>
+    <%= form.rich_text_area :text, placeholder: "Body"%>
+  </p>
+
+  <p class="publish-button">
+    <%= form.submit 'Publish', data: { confirm: 'You sure you ready to publish?' } %>
+  </p>
+
+<% end %>

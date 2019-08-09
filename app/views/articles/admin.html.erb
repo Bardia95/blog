@@ -1,0 +1,10 @@
+<h1>Bardia Pourvakil</h1>
+
+<p class="new-article-button">
+  <%= link_to 'New Article', new_article_path, id: "new-article-link" %><br><br>
+</p>
+<% @articles.each do |article| %>
+    <%= link_to article.title, edit_article_path(article) %> - 
+    <%= link_to 'Delete', article_path(article),method: :delete, data: { confirm: 'Are you sure?' } %> 
+  </tr>
+<% end %>
