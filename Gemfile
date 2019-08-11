@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem "mini_magick"
 
-gem "aws-sdk-s3", require: false
+gem 'aws-sdk', '~> 3'
 
 
 group :development do
