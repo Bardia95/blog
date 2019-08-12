@@ -14,30 +14,49 @@
  *= require_self
  */
 html { 
-  font-family: -apple-system-font;
+  font-family: -apple-system-font sans-serif;
   margin-top: 20px;
   background: #628395;
 }
 
 
-@media only screen and (min-width : 320px) and (max-width : 767px) {
+@media screen and (min-width : 320px) and (max-width : 767px) {
   html {
     margin-left: 2%;
     margin-right: 2%;
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  a {
+    font-size: 2em;
   }
 }
   
 
-@media only screen and (min-width : 768px) and (max-width : 1223px) {
+@media  screen and (min-width : 768px) and (max-width : 1223px) {
   html {
     margin-left: 10%;
     margin-right: 10%;
   }
+  h1 {
+    font-size: 2.5em;
+  }
+  a {
+    font-size: 1.5em;
+  }
 }
   
-@media only screen  and (min-width : 1224px) {
+@media screen and (min-width : 1224px) {
   html {
     margin-left: 15%;
     margin-right: 15%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  a {
+    font-size: 1.25em;
   }
 }

@@ -1,10 +1,13 @@
-<h1 style="color:#DBAD6A">Bardia Pourvakil</h1>
+<h1 style="color:#DBAD6A">The Periculum</h1>
 
 <p id="new-button-container">
   <%= link_to '➕', new_article_path, id: "new-button" %><br><br>
 </p>
-<% @articles.each do |article| %>
-    <%= link_to article.title, edit_article_path(article), class:'article-link'%> - 
-    <%= link_to 'Delete', article_path(article),method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete_link' %> 
-  </tr>
-<% end %>
+<ul>
+  <% @articles.each do |article| %>
+  <li class="article-link-list-item">
+    <%= link_to article.title, edit_article_path(article), class:'article-link'%> -
+    <%= link_to 'Delete', article_path(article),method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete_link' %>
+  </li>
+  <% end %>
+</ul>
