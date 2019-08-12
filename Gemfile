@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.7'
 gem "mini_magick"
 gem "paperclip", "~> 6.1.0"
 
-gem 'aws-sdk-s3', '~> 1', require: false
+gem 'aws-sdk-s3', '~> 1'
 
 
 group :development do
