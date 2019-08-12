@@ -2,16 +2,10 @@
   <h1>
     <%= @article.title %>
   </h1>
-  
-  <p style="font-style: italic">
-    <%= @article.created_at.strftime("%d.%m.%y") %>
-  </p>
-  
   <p>
     <%= @article.text %>
   </p>
 </div>
-
 <div class="back-button-container">
   <%= link_to 'Back', articles_path, class: "back-button" %>
 </div>

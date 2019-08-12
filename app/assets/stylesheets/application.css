@@ -13,11 +13,16 @@
  *= require_tree .
  *= require_self
  */
-html { 
-  font-family: -apple-system-font sans-serif;
+html {
   margin-top: 20px;
   background: #628395;
 }
+
+h1 {
+  color:#DBAD6A;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 
 
 @media screen and (min-width : 320px) and (max-width : 767px) {
@@ -29,7 +34,7 @@ html {
   h1 {
     font-size: 3em;
   }
-  a {
+  a, p {
     font-size: 2em;
   }
 }
@@ -37,26 +42,26 @@ html {
 
 @media  screen and (min-width : 768px) and (max-width : 1223px) {
   html {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 18%;
+    margin-right: 18%;
   }
   h1 {
     font-size: 2.5em;
   }
-  a {
+  a, p {
     font-size: 1.5em;
   }
 }
   
 @media screen and (min-width : 1224px) {
   html {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
   h1 {
     font-size: 2em;
   }
-  a {
+  a, p {
     font-size: 1.25em;
   }
 }
