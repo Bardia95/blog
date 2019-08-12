@@ -23,7 +23,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem "mini_magick"
-gem "paperclip", "~> 6.1.0"
 
 gem 'aws-sdk-s3', '~> 1'
 
